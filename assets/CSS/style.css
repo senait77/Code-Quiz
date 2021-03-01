@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  
+ 
+  
+  body {
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 211, 191);
+  }
+
+  
+ .view {
+   position: absolute;
+   top: 0;
+   left: 0;
+  
+ }
+
+ .time {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+ 
+}
+
+.value {
+  position: relative;
+
+  
+}
+#submit {
+  padding-left: 3rem;
+ padding-top: 1rem;
+ border-radius: 10px;
+ background-color: rgb(75, 167, 204);
+
+}
+#initiaField {
+  padding: 10px;
+  border-radius: 3px solod rgb(110, 13, 13);
+  background-color: rgb(152, 186, 223);
+}  
+
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(197, 230, 216);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    
+    gap: 15px;
+    margin: 20px 0;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  
+  .btn {
+    
+    border: 1px solid rgb(95, 95, 8);
+    background-color: rgb(95, 95, 170);
+    border-radius: 5px;
+    padding: 15px 15px;
+    color: white;
+    outline: none;
+    text-align: left;
+  }
+  
+  .btn:hover {
+    background-color: rgb(233, 200, 17);
+  }
+  
+ 
+  
+  
+
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
