@@ -9,9 +9,9 @@
   * * NOTE: you can play around all the functions there until your desired password is generated.
 
   Here is a link to deploy my application:
-   * Repo: 
+   * Repo: https://github.com/senait77/Code-Quiz
 
-   * Deploy: 
+   * Deploy: https://senait77.github.io/Code-Quiz/
 
 
 
@@ -21,7 +21,6 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-* [General info](#genral-info)
 * [Technologies](#technologies)
 * [Project status](#project-status)
 * [Contact](#contact)
@@ -57,9 +56,7 @@ My web page is based and inspired by;
 * [https://choosealicense.com/licenses/agpl-3.0/](https://choosealicense.com/licenses/agpl-3.0/)
 
 
-## General info
 
-*  
 
 ## Technologies
 On the top of the  HTML and CSS, these passwprd generator uses the Javascript :
@@ -70,6 +67,7 @@ On the top of the  HTML and CSS, these passwprd generator uses the Javascript :
 * loop (for loop and forEach loop)
 * Functions
 * Event listner
+* varable comparison
 
 ## Project status
 These project is still in developing mood, as it will be updated to a more upgraded code quiz APP .
