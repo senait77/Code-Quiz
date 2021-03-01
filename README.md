@@ -6,7 +6,7 @@
   These is a code Quiz project which includes  the basic information required to complete the weekely challange.
   And below is the list of items I used upon the completion of the password generator.
 
-  * * NOTE: you can play around all the functions there until your desired password is generated.
+  
 
   Here is a link to deploy my application:
    * Repo: https://github.com/senait77/Code-Quiz
