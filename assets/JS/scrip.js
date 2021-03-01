@@ -12,7 +12,7 @@ var score = 5;
 
 
 
-// start button 
+// start funcion
 startButtonEl.addEventListener('click', start);
 
 
@@ -26,21 +26,21 @@ function start() {
 
 }
 
-
+// these is the timer function
 
 function countDown() {
 
     time--;
     timeEl.innerText = `time: ${time}`
 
-    console.log(time);
+    
     if (time <= 0) {
         clearInterval(timer);
        endQuiz();
     }
 
 }
-
+// these is a function for the submit answer
 function submitAnswer() {
     let answer = this.dataset.correct;
 
@@ -51,8 +51,8 @@ function submitAnswer() {
         document.getElementById("response").innerText = "Wrong!";
 
         setTimeout(() => {
-            curQuestion++
-            showQuestion()
+            curQuestion++;
+            showQuestion();
             }, 1000)
 
     }
@@ -62,8 +62,8 @@ function submitAnswer() {
         score++
 
         setTimeout(() => {
-            curQuestion++
-            showQuestion()
+            curQuestion++;
+            showQuestion();
             }, 1000)
     }
     
@@ -72,11 +72,11 @@ function submitAnswer() {
     
 }
 
-
+// funtion for the question to show
 function showQuestion() {
     document.getElementById("response").innerText = "";
-    let question = questions[curQuestion]
-    questionEl.innerText = question.question
+    let question = questions[curQuestion];
+    questionEl.innerText = question.question;
     answerButtonEl.innerHTML = "";
     for (var i = 0; i < question.answers.length; i++) {
         let newButton = document.createElement("BUTTON");
@@ -90,11 +90,8 @@ function showQuestion() {
 
     }
 
-
-    
-
 }
-
+// the quiz ends here
 function endQuiz() {
     answerButtonEl.innerHTML = "";
     questionEl.innerText = "You are all DONE! put ur initals here and submit!";
@@ -102,11 +99,12 @@ function endQuiz() {
     newTextField.id = "initiaField";
     var submit = document.createElement("button") ;
     submit.id = "submit";
-
     submit.addEventListener('click', saveScore);
     questionEl.appendChild(newTextField);
     questionEl.appendChild(submit);
 }
+
+//save to to the local storage
 
 function saveScore() {
     var name = document.getElementById("initiaField").value;
@@ -119,7 +117,7 @@ function saveScore() {
     
 }
 
-
+// these are the questions for the user
 var questions = [
     {
         question: "What does DOM stands for? ",
@@ -171,4 +169,4 @@ var questions = [
 
 ]
 
-
+// end of the code quiz
